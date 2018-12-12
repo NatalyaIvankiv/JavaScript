@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Практична робота 2</title>
+<script src="2.js" defer></script>
+<style>
+.button {
+    margin-top: 5%;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+
+}
+.button2 {
+    margin-top: 5%;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+
+}
+input[type=text] {
+
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #008CBA;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.col-30{
+    float: left;
+    width: 30%;
+}
+
+.col-40 {
+    float: left;
+    width: 40%;
+   
+}
+
+</style>
+</head>
+<body>
+<div align="center" >
+      <div class="col-30">
+<h1>Завдання 1</h1>
+<p>Функція, що повертає куб числа. </p>
+<input type="text"  id="number1" value="">
+<button onclick="cube()" class="button">Куб числа</button>
+</div>
+
+<div class="col-30">
+       <h1>Завдання 2</h1>
+<p>Функція, що додає перше число до другого і ділить результат на третє число. </p>
+<input type="text"  id="number2_1" value=""></p>
+<input type="text"  id="number2_2" value=""></p>
+<input type="text"  id="number2_3" value="">
+<button onclick="fun2()" class="button2">Результат</button>
+<p id="output"></p>
+      </div>
+	  <div class="col-40">
+      <h1>Завдання 3</h1>
+<p> Напишіть функцію, що приймає число від 1 до 7 і повертає відповідну назву дня (українською). </p>
+<input type="text"  id="number3" value="">
+<button onclick="day()" class="button">День</button>
+<p id="output2"></p>
+      </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<style>
+.button {
+    margin-top: 5%;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	cursor: pointer;
+
+}
+.button2 {
+    margin-top: 5%;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	cursor: pointer;
+
+}
+input[type=text] {
+
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #008CBA;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+
+</style>
+ <meta charset="utf-8">
+<title>Практична робота 3</title>
+<script src="3.js" defer></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+//3
+$(function() {
+      $("#but1").click( function()
+           {
+		   var v = $("#val3_1").val();
+             $("#output1").html(v);
+           }
+      );
+});
+//4
+$(function() {
+      $("#but2").click( function()
+           {
+             $("#val4_1").css("color","#f44336");
+           }
+      );
+});
+//2
+$(function() {
+      $("#but3").click( function()
+           {
+             $("#val2_1").css("fontWeight","bold");
+			 $("#val2_2").html("Варіант №5");
+           }
+      );
+});
+</script>
+</head>
+<body>
+
+  <h2 id="val4_1">Users:</h2>
+  <p id="val2_2"></p>
+<p id="val2_1">Змінить ім’я Peter на Ваше</p>
+<input type="text"  id="val3_1" value=""></br>
+<b>JS</b>
+<button onclick="function3()" class="button">Замінити ім'я</button>
+<button onclick="function4()" class="button2">Замінити колір</button>
+<button onclick="function2()" class="button">Шрифт</button>
+
+  <ul>
+    <li><h3>John</h3></li>
+    <li id="output1"><h3>Peter</h3></li> 
+  </ul>
+  <b>jQuery</b>
+<button id="but1" class="button">Замінити ім'я</button>
+<button id="but2" class="button2">Замінити колір</button>
+<button id="but3" class="button">Шрифт</button>
+
+</body>
+
+</html>
+
